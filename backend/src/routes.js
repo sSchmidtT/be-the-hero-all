@@ -7,6 +7,7 @@ const routes = express.Router();
 //rota de login
 routes.post('/sessions', SessionController.create);
 
+//rota retornar lista de ongs
 routes.get('/ongs', OngController.list);
 
 routes.post('/ongs', OngController.create);
